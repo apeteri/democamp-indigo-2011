@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: GridFS Filesystem Plug-In
+Bundle-SymbolicName: democamp.filesystem.gridfs;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: democamp.filesystem.gridfs.Activator
+Bundle-Vendor: B2 International
+Require-Bundle: com.google.guava,
+ org.eclipse.core.runtime,
+ org.eclipse.core.filesystem
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: lib/mongo-java-driver-3.4.2.jar,
+ .

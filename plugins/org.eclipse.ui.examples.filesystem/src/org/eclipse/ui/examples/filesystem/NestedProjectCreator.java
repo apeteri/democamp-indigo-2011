@@ -169,16 +169,14 @@ public class NestedProjectCreator {
 						IProject project = link.getProject();
 						if (project == null || !project.isAccessible())
 							return;
-						IFileStore projectStore;
+						IFileStore linkStore;
 						try {
-							projectStore = EFS.getStore(project.getLocationURI());
+							linkStore = EFS.getStore(link.getLocationURI());
 						} catch (CoreException e) {
 							//ignore projects in invalid locations
 							return;
 						}
-						IFileStore linkStore = projectStore.getChild(link.getProjectRelativePath());
 						searchInStore(linkStore);
-
 					}
 
 					/**

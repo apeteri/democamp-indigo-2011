@@ -17,7 +17,7 @@ import com.mongodb.ServerAddress;
 
 public class Activator implements BundleActivator {
 
-	public static final String PLUGIN_ID = "com.b2international.democamp.filesystem.gridfs";
+	public static final String PLUGIN_ID = "democamp.filesystem.gridfs";
 	
 	private static Activator instance;
 	private static ILog log;
